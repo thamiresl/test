@@ -43,7 +43,8 @@ Retorno:
 
 describe('9 - Implemente os casos de teste da função `getCharacter`', () => {
   it('Verifica se a função `getCharacter` retorna o objeto do personagem corretamente.', () => {
-    expect(getCharacter('')).toBeUnderfined();
+    expect(getCharacter()).toBe(undefined);
+    expect(getCharacter('Trybe')).toBe(undefined);
     // ESCREVA SEUS TESTES ABAIXO:
     // Teste se a função, quando não recebe nenhum parâmetro, retorna undefined.
     // Teste se a função retorna o objeto correto para o parâmetro 'Arya',

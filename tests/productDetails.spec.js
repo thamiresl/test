@@ -35,7 +35,9 @@ describe('6 - Implemente os casos de teste para a função `productDetails`', ()
     expect(typeof productDetails([0])).toBe('object');
     expect(typeof productDetails([1])).toBe('object');
     expect(!productDetails()).not.toBe(productDetails());
-    expect(productDetails).toBe();
+    expect(productDetails('x', 'y')[0].details.productId.slice(-3)).toBe('123');
+    expect(productDetails('x', 'y')[1].details.productId.slice(-3)).toBe('123');
+    
     // ESCREVA SEUS TESTES ABAIXO:
     // Teste se productDetails é uma função.
     // Teste se o retorno da função é um array.
