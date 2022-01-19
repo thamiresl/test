@@ -37,6 +37,7 @@ describe('6 - Implemente os casos de teste para a função `productDetails`', ()
     expect(!productDetails()).not.toBe(productDetails());
     expect(productDetails('x', 'y')[0].details.productId.slice(-3)).toBe('123');
     expect(productDetails('x', 'y')[1].details.productId.slice(-3)).toBe('123');
+    //https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
     
     // ESCREVA SEUS TESTES ABAIXO:
     // Teste se productDetails é uma função.
